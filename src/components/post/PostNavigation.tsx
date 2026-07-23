@@ -12,7 +12,7 @@ export function PostNavigation({ prev, next }: PostNavigationProps) {
     <nav className="mt-12 grid grid-cols-1 gap-4 border-t border-zinc-200 pt-8 sm:grid-cols-2 dark:border-zinc-800">
       {prev ? (
         <Link
-          href={`/posts/${prev.slug}`}
+          href={`/posts/${encodeURIComponent(prev.slug)}`}
           className="group rounded-lg border border-zinc-200 p-4 transition-colors hover:border-zinc-300 dark:border-zinc-800 dark:hover:border-zinc-700"
         >
           <span className="flex items-center gap-1 text-sm text-zinc-500 dark:text-zinc-400">
@@ -27,7 +27,7 @@ export function PostNavigation({ prev, next }: PostNavigationProps) {
       )}
       {next ? (
         <Link
-          href={`/posts/${next.slug}`}
+          href={`/posts/${encodeURIComponent(next.slug)}`}
           className="group rounded-lg border border-zinc-200 p-4 text-right transition-colors hover:border-zinc-300 dark:border-zinc-800 dark:hover:border-zinc-700"
         >
           <span className="flex items-center justify-end gap-1 text-sm text-zinc-500 dark:text-zinc-400">

@@ -19,8 +19,8 @@ export async function GET() {
   for (const post of posts) {
     feed.addItem({
       title: post.title,
-      id: `${SITE.url}/posts/${post.slug}`,
-      link: `${SITE.url}/posts/${post.slug}`,
+      id: `${SITE.url}/posts/${encodeURIComponent(post.slug)}`,
+      link: `${SITE.url}/posts/${encodeURIComponent(post.slug)}`,
       description: post.description,
       date: new Date(post.date),
       category: post.tags.map((tag) => ({ name: tag, term: tag })),

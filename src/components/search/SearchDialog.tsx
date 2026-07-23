@@ -48,7 +48,7 @@ export function SearchDialog({ posts, open, onClose }: SearchDialogProps) {
   const handleSelect = useCallback(
     (slug: string) => {
       onClose();
-      router.push(`/posts/${slug}`);
+      router.push(`/posts/${encodeURIComponent(slug)}`);
     },
     [onClose, router]
   );

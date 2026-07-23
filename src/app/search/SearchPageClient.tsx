@@ -48,7 +48,7 @@ export function SearchPageClient({ posts }: SearchPageClientProps) {
 
   const handleSelect = useCallback(
     (slug: string) => {
-      router.push(`/posts/${slug}`);
+      router.push(`/posts/${encodeURIComponent(slug)}`);
     },
     [router]
   );

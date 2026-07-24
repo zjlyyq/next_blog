@@ -8,11 +8,11 @@ published: true
 
 # 欢迎来到我的博客
 
-这是我的个人博客，使用 **Next.js 15** + **TypeScript** + **Tailwind CSS** 搭建。
+这是我的个人博客，使用 **Next.js 16** + **TypeScript** + **Tailwind CSS** 搭建。
 
 ## 技术栈
 
-- **Next.js 15** - React 框架，App Router
+- **Next.js 16** - React 框架，App Router
 - **TypeScript** - 类型安全
 - **Tailwind CSS v4** - 样式
 - **Markdown** - 文章内容

@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "src/content/posts",
-  base: "/repo",
+  base: "/next_blog",
   title: "Bun is better",
   description: "Just playing around.",
   themeConfig: {

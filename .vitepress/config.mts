@@ -12,7 +12,9 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Typescript', link: '/typescript-tips' },
       { text: 'Devops', link: '/gittea-vs-gitlab' },
-      { text: 'Bun', link: '/What\'s Bun' }
+      { text: 'Bun', link: '/What\'s Bun' },
+      { text: 'Build Tools', link: '/frontend_build' },
+      { text: 'Monorepo', link: '/monorepo/what_is_monorepo' }
     ],
     lastUpdated: {
       formatOptions: {
@@ -20,18 +22,18 @@ export default defineConfig({
         timeStyle: 'short'
       }
     },
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    // sidebar: [
+    //   {
+    //     text: 'Examples',
+    //     items: [
+    //       { text: 'Markdown Examples', link: '/markdown-examples' },
+    //       { text: 'Runtime API Examples', link: '/api-examples' }
+    //     ]
+    //   }
+    // ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/zjlyyq/next_blog' }
     ]
   }
 })

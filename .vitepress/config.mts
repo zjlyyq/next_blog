@@ -3,16 +3,23 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "src/content/posts",
-  
+  base: "/repo",
   title: "Bun is better",
   description: "Just playing around.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Typescript', link: '/typescript-tips' }
+      { text: 'Typescript', link: '/typescript-tips' },
+      { text: 'Devops', link: '/gittea-vs-gitlab' },
+      { text: 'Bun', link: '/What\'s Bun' }
     ],
-
+    lastUpdated: {
+      formatOptions: {
+        dateStyle: 'long',
+        timeStyle: 'short'
+      }
+    },
     sidebar: [
       {
         text: 'Examples',

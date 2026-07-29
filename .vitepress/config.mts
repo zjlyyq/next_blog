@@ -13,12 +13,12 @@ export default defineConfig({
     nav: generateNav(),
     sidebar: generateSidebar(),
 
-    lastUpdated: {
-      formatOptions: {
-        dateStyle: 'long',
-        timeStyle: 'short'
-      }
-    },
+    // lastUpdated: {
+    //   formatOptions: {
+    //     dateStyle: 'long',
+    //     timeStyle: 'short'
+    //   }
+    // },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/zjlyyq/next_blog' }
